@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/logo"
+        android:text="使用说明"
+        android:textSize="29dp" />
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/roll_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        app:rollviewpager_play_delay="3000" />
+
+    <TextView
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roll_view_pager"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="使用帮助：\n1.首先进入app等待3秒进入程序主界面\n2.然后选择拍摄照片或者从相册选择照片，右上方有使用帮助\n3.拍摄或者从相册选择照片后点击next对图片进行裁切或者直接进行检测\n4.然后点击DETECTION图片会上传服务器并返回检测结果，当然这需要一段时间"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="林格曼黑度检测应用于烟雾污染程度的检测，通过简易的操作获取烟气的林格曼黑度值，并生成分析报告，提供排放建议。" />
+
+</RelativeLayout>

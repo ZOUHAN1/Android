@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jlu.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="林格曼烟雾黑度检测"
+        android:networkSecurityConfig="@xml/network_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/button2" />
+
+
+
+
+
+        <activity android:name=".Login">
+        </activity>
+
+
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="林格曼烟雾黑度检测"
+            android:screenOrientation="portrait">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+
+
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="true"
+            android:label="使用说明"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ShowDetailInfor"
+            android:exported="true"
+            android:label="详细信息"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ChoosePhoto"
+            android:label="烟雾黑度检测"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SharePage"
+            android:label="检测报告"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PhotoDisplay"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetAdjust"
+            android:label="天气调整"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowResult"
+            android:label="检测结果"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.gudd.demo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_screencapture" />
+        </provider>
+    </application>
+
+</manifest>

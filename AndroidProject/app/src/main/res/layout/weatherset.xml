@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".GetAdjust">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="16dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:textColor="@android:color/holo_orange_dark"
+           android:text="烟雾等级调整"
+
+           />
+       <ImageView
+           android:layout_marginTop="100dp"
+           android:id="@+id/imageView"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_gravity="center"
+           android:src="@drawable/wea2"
+           android:contentDescription="Smoke Icon" />
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="烟雾等级调整"
+           android:textSize="18sp" />
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <!-- 左侧图标 -->
+           <ImageView
+               android:id="@+id/left_icon"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/cloudy" />
+
+           <!-- SeekBar -->
+           <SeekBar
+               android:id="@+id/seekbar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_toEndOf="@id/left_icon"
+               android:layout_toStartOf="@+id/right_icon"
+               android:layout_toLeftOf="@+id/right_icon"
+               android:max="30"
+               android:progress="15"
+               android:layout_centerVertical="true" />
+
+           <!-- 右侧图标 -->
+           <ImageView
+               android:id="@+id/right_icon"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/sunny" />
+       </RelativeLayout>
+       <!--
+       <SeekBar
+           android:id="@+id/seekbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:max="30"
+           android:progress="15" />
+           -->
+
+       <TextView
+           android:id="@+id/smokeLevelTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="调整幅度：0"
+           android:textSize="18sp" />
+
+       <Button
+           android:id="@+id/applyButton"
+           android:layout_width="140dp"
+           android:drawablePadding="0dp"
+           android:layout_height="wrap_content"
+           android:text="应  用"
+           style="@style/CustomButtonStyle"
+           android:textStyle="bold"
+           android:layout_gravity="center" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="注意:\n     你可以根据图片中对应的天气状况对烟雾的等级做出微小的调整，调整值在-1.5个等级到1.5个等级之间。" />
+   </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/design_default_color_secondary</item>
+        <item name="colorPrimaryDark">@color/teal_200</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/customer_btn</item> <!-- 设置按钮的背景为上面定义的 XML -->
+        <item name="android:textColor">#FFFFFF</item> <!-- 文本颜色 -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item> <!-- 按钮的外边距 -->
+    </style>
+
+
+
+    <style name="CustomButtonStyle2" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/customer_btn2</item> <!-- 设置按钮的背景为上面定义的 XML -->
+        <item name="android:textColor">#FFFFFF</item> <!-- 文本颜色 -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item> <!-- 按钮的外边距 -->
+    </style>
+
+
+
+    <style name="CustomButtonStyle3" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/customer_btn3</item> <!-- 设置按钮的背景为上面定义的 XML -->
+        <item name="android:textColor">#FFFFFF</item> <!-- 文本颜色 -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item> <!-- 按钮的外边距 -->
+    </style>
+
+
+    <style name="CustomButtonStyle4" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/customer_btn4</item> <!-- 设置按钮的背景为上面定义的 XML -->
+        <item name="android:textColor">#FFFFFF</item> <!-- 文本颜色 -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item> <!-- 按钮的外边距 -->
+    </style>
+
+</resources>

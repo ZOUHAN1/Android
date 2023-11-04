@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/login3"
+    android:padding="16dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="用户登录"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textSize="30dp"
+    android:textColor="#7C4DFF"
+    />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageViewLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/user" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:layout_below="@+id/imageViewLogo"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_marginTop="16dp"
+            android:background="#ffffffff"
+            android:hint="用户名"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/l2"
+    android:layout_below="@+id/l1"
+    >
+
+    <ImageView
+        android:layout_below="@id/l1"
+        android:layout_marginTop="8dp"
+        android:layout_width="40dp"
+        android:src="@drawable/password"
+        android:layout_height="40dp"/>
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="8dp"
+        android:background="#ffffffff"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button4"
+        android:text="登录" />
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonLogin"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button5"
+            android:text="注册" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/buttonRegister"
+            android:background="@drawable/button2"
+            android:text="退出" />
+    </LinearLayout>
+<TextView
+    android:text="如果你在使用过程中遇到任何问题，请联系开发人员\nqq:2512752005"
+    android:layout_marginBottom="-50dp"
+    android:layout_width="match_parent"
+    android:layout_alignBottom="@+id/l3"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
